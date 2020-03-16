@@ -1,0 +1,83 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww11620\viewh10840\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+#####ALL INSTANCES UPLOADED#####\
+\
+\
+rmaiale@zipcodes-MacBook-Pro-6 data % grep -r -p "st" transaction_data_daily_event_log_20190129.dat \
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_00_20190129_000000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_01_20190129_020000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_02_20190129_040000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_03_20190129_060000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_04_20190129_080000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_05_20190129_100000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_06_20190129_120000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_07_20190129_140000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_08_20190129_160000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_09_20190129_180000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_10_20190129_200000\
+transaction_data_daily_event_log_20190129.dat:DIDLM230::transaction_data_upload_started_11_20190129_220000\
+\
+\
+\
+#####ALL INSTANCES -c flag#####\
+\
+\
+grep started transaction_data_daily_event_log_20190129.dat -c\
+12\
+\
+\
+\
+#####ALL INSTANCES UPLOAD SUCCESSFUL#####\
+\
+\
+\
+rmaiale@zipcodes-MacBook-Pro-6 data % grep -r -p -c "st" transaction_data_daily_event_log_20190129.dat \
+transaction_data_daily_event_log_20190129.dat:12\
+\
+\
+#####ALL INSTANCES UPLOADED#####\
+\
+\
+ggrep - r ",38-" users.csv\
+\
+\
+\
+#####ALL INSTANCES UPLOADED#####\
+\
+\
+\
+grep complete transaction_data_daily_event_log_20190129.dat | wc\
+\
+\
+\
+#####INSTANCES FAILED#####\
+\
+\
+grep -n fail transaction_data_daily_event_log_20190129.dat\
+10:DIDLM230::transaction_data_upload_failure_04_20190129_080133::WEAKSIGNAL\
+15:DIDLM230::transaction_data_upload_failure_06_20190129_120000::SYSTMAINTE\
+18:DIDLM230::transaction_data_upload_failure_07_20190129_140754::WEAKSIGNAL\
+23:DIDLM230::transaction_data_upload_failure_09_20190129_180000::SYSOFFLINE\
+\
+\
+\
+#####ALL INSTANCES SYSOFFLINE or WEAKSIGNAL#####\
+\
+\
+rmaiale@zipcodes-MacBook-Pro-6 data % grep 'SYSOFFLINE\\|WEAKSIGNAL' transaction_data_daily_event_log_20190129.dat\
+DIDLM230::transaction_data_upload_failure_04_20190129_080133::WEAKSIGNAL\
+DIDLM230::transaction_data_upload_failure_07_20190129_140754::WEAKSIGNAL\
+DIDLM230::transaction_data_upload_failure_09_20190129_180000::SYSOFFLINE\
+\
+\
+#####DUNDER MIFFLIN IS HIRING#####\
+\
+\
+^[0-9]+\\t+[A-Z][a-z]+\\W+[A-Z][a-z]+\\W+$ \'93Software\'94|\'94Developer\'94\
+}
